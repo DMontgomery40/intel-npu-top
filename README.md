@@ -1,4 +1,4 @@
-# nputop - Text-Based Prototype
+# Intel nputop - Text-Based Prototype
 
 A simplified, text-only proof-of-concept for monitoring Intel Meteor Lake NPU usage in real-time via sysfs on Linux.
 
