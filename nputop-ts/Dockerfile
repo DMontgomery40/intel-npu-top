@@ -2,9 +2,8 @@ FROM node:20-slim
 
 WORKDIR /mynpu-ts
 COPY package*.json ./
-COPY npu_usage_graph.ts ./
-COPY tsconfig.json ./
+COPY *.ts ./
 
 RUN npm install
 
-CMD ["npx", "ts-node", "npu_usage_graph.ts"]
+CMD ["npx", "ts-node", "index.ts"]

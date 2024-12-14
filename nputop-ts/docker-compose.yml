@@ -4,8 +4,7 @@ services:
     build: .
     container_name: nputop-ts
     restart: unless-stopped
-    privileged: true  # Needed for sysfs access
-    # Using same device pass-through as your Python version
+    privileged: true
     devices:
       - "/sys/devices/pci0000:00/0000:00:0b.0:/sys/devices/pci0000:00/0000:00:0b.0"
-    command: ["npx", "ts-node", "npu_usage_graph.ts"]
+    command: ["npx", "ts-node", "index.ts"]

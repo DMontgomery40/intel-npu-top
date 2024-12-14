@@ -26,4 +26,18 @@ async function findNpuPath(): Promise<string | null> {
 async function readRuntime(devicePath: string): Promise<number> {
     try {
         const data = await fs.readFile(devicePath, 'utf8');
-        return parseFloat(data.trim
+        return parseFloat(data.trim());
+    } catch (e) {
+        return 0.0;
+    }
+}
+
+async function main() {
+    const devicePath = await findNpuPath();
+    if (!devicePath) {
+        console.error("No NPU device found");
+        return;
+    }
+}
+
+main();
