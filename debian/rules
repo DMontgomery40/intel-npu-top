@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
 export PYBUILD_NAME=intel-npu-top
+export PYBUILD_SYSTEM=distutils
 
 %:
 	dh $@ --with python3 --buildsystem=pybuild
