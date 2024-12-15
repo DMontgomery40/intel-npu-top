@@ -1,4 +1,6 @@
-# Intel nputop - Text-Based Prototype
+
+# intel-npu-top
+
 
 A simplified, text-only proof-of-concept for monitoring Intel Meteor Lake NPU usage in real-time via sysfs on Linux.
 
@@ -31,4 +33,4 @@ The TypeScript version includes:
 * ASCII-based visualization
 * Docker container support
 * Better error handling
-* Structured codebase
+
