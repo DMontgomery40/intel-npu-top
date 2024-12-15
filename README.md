@@ -14,8 +14,13 @@ This project was inspired by and based on code from [ZoLArk173/nputop](https://g
 - Prints the calculated usage percentage directly to the terminal in a loop.
 - Runs inside a Docker container for easy packaging.
 
-## How to Run
+## Important Notice
 
-1. **Build and run with Docker Compose:**
-   ```bash
-   docker-compose build && docker-compose up
+This is the basic prototype branch. For the more feature-complete TypeScript implementation, please check out the `typescript` branch.
+
+The TypeScript version includes:
+- Real-time NPU usage monitoring
+- ASCII-based visualization
+- Docker container support
+- Better error handling
+- Structured codebase
