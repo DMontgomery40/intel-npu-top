@@ -1,4 +1,4 @@
-# Intel NPUTop (TypeScript Branch) - Text-Based Prototype
+# Intel NPUTop (TypeScript Branch) 
 
 A TypeScript-based proof-of-concept for monitoring Intel Meteor Lake NPU usage in real-time via sysfs on Linux.
 
@@ -63,9 +63,6 @@ This is an early prototype, but contributions are welcome. Please note that the 
 4. Push to the branch
 5. Create a Pull Request
 
-## License
-
-[Add your license here]
 
 ## Future Plans
 
