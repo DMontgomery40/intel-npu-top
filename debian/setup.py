@@ -9,7 +9,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'intel-npu-top=intel-npu-top.cli:main',
+            'intel-npu-top=intel_npu_top.cli:main',
         ],
     },
     author="David Montgomery",
