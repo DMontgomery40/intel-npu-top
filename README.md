@@ -19,6 +19,7 @@ This is an experimental prototype and is **NOT PRODUCTION READY**. Use at your o
 - Linux system with Intel Meteor Lake NPU
 - Python 3.6 or higher
 - Access to NPU sysfs entries (usually requires root privileges)
+  - * check with `ls -lh /sys/devices/pci0000:00/0000:00:0b.0/accel/accel0`
 
 ## Features
 
