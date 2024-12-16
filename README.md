@@ -2,6 +2,8 @@
 
 A monitoring tool for Intel Meteor Lake NPU usage in real-time via sysfs on Linux, featuring ASCII-based visualization.
 
+![NPU Usage Monitor Screenshot](assets/screenshot.png)
+
 **Status:** Pre-alpha prototype — expect incomplete features, rough edges, and limited functionality.
 
 ## ⚠️ Important Warning
