@@ -44,7 +44,7 @@ python3 -m pip install .
 
 ### Using Docker
 
-docker-compose up -d
+docker-compose up (best to not run `-d` if you want to see output; unless you're porting the output to another machine (e.g., out of a VM) this method is not ideal. 
 
 ## Usage
 
