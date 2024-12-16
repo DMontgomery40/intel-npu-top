@@ -49,7 +49,9 @@ docker-compose up -d
 
 sudo intel-npu-top
 
-Note: Root privileges are required to access the NPU sysfs entries.
+Note: Root privileges are (usually) required to access the NPU sysfs entries*
+
+  * check with `ls -lh /sys/devices/pci0000:00/0000:00:0b.0/accel/accel0`
 
 ## Acknowledgements
 
