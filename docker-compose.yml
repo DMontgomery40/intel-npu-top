@@ -2,11 +2,11 @@ version: "3.9"
 services:
   nputop:
     build: .
-    container_name: nputop
+    container_name: intel-npu-top
     restart: unless-stopped
     # If you need access to sysfs, you might need to run in privileged mode:
     privileged: true
     # If you need to pass through specific device access, uncomment and adjust:
     # devices:
     #  - "/sys/devices/pci0000:00/0000:00:0b.0:/sys/devices/pci0000:00/0000:00:0b.0"
-    command: [ "python3", "mynpu.py" ]
+    command: [ "python3", "intel-npu-top.py" ]
