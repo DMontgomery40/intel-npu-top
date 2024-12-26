@@ -34,7 +34,9 @@ This is an experimental prototype and is **NOT PRODUCTION READY**. Use at your o
 
 Just copy the STANDALONE.py script to your system and run it with Python 3.
 
-### From PyPI   (Coming Soon)
+### From PyPI
+
+`pip3 install intel-npu-top`
 
 ### From Source
 
