@@ -1,65 +1,62 @@
-# intel-npu-top 
+# intel-npu-top
 
-A monitoring tool for Intel Meteor Lake NPU usage in real-time via sysfs on Linux, featuring ASCII-based visualization.
+A minimalist, zero-dependency monitoring tool for Intel Meteor Lake NPU usage in real-time via sysfs on Linux. Features clean ASCII-based visualization in just 52 lines of Python.
 
 ![NPU Usage Monitor Screenshot](assets/screenshot.png)
 
-**Status:** Pre-alpha prototype — expect incomplete features, rough edges, and limited functionality.
-
-## ⚠️ Important Warning
-
-This is an experimental prototype and is **NOT PRODUCTION READY**. Use at your own risk and expect:
-- Incomplete features
-- Potential bugs
-- Limited error handling
-- Possible system-specific issues
-
-## Requirements
-
-- Linux system with Intel Meteor Lake NPU
-- Python 3.6 or higher
-- Access to NPU sysfs entries (usually requires root privileges)
-  - * check with `ls -lh /sys/devices/pci0000:00/0000:00:0b.0/accel/accel0`
-
 ## Features
 
-* Real-time NPU usage monitoring with ASCII bar chart visualization
-* Historical view of the last 40 samples
-* Automatic screen refresh
-* Docker container support
+* **Dead Simple**: Single Python file, zero dependencies - just copy and run
+* **Real-time Monitoring**: Live NPU usage with ASCII bar chart visualization
+* **Usage History**: Visual graph of the last 40 samples
+* **Clean Interface**: Pure Python + ASCII = prettier than intel_gpu_top 
+* **Auto-refresh**: Continuous monitoring out of the box
 
 ## Installation
 
-### Standalone Script
+### Standalone Script (Recommended!)
+Just copy STANDALONE.py to your system and run it - that's it! No dependencies, no package management, no fuss.
 
-Just copy the STANDALONE.py script to your system and run it with Python 3.
-
-### From PyPI
-
-`pip3 install intel-npu-top`
+### Also available via PyPI
+pip3 install intel-npu-top
 
 ### From Source
-
 git clone https://github.com/DMontgomery40/intel-npu-top
 cd intel-npu-top
 python3 -m pip install .
 
-### Using Docker
+### Docker (if you really want to...)
+docker-compose up
+Note: Docker is overkill for local monitoring - but great if you're pulling NPU data from another VM!
 
-docker-compose up (best to not run `-d` if you want to see output; unless you're porting the output to another machine (e.g., out of a VM) this method is not ideal. 
+## Requirements
+
+* Linux system with Intel Meteor Lake NPU
+* Python 3.6 or higher
+* Root privileges for NPU sysfs access (required for all installation methods)
+  * Verify with: ls -lh /sys/devices/pci0000:00/0000:00:0b.0/accel/accel0
 
 ## Usage
 
+### If using standalone script:
+sudo python3 STANDALONE.py
+
+### If installed via pip:
 sudo intel-npu-top
 
-Note: Root privileges are (usually) required to access the NPU sysfs entries*
-
-  * check with `ls -lh /sys/devices/pci0000:00/0000:00:0b.0/accel/accel0`
+The interface shows:
+- Current NPU usage percentage with visual bar
+- Device information (vendor ID, device ID, etc.)
+- Historical usage graph
+- Runtime status and NUMA node details
 
 ## Acknowledgements
 
-This project was inspired by and based on code from [ZoLArk173/nputop](https://github.com/ZoLArk173/nputop). Thanks for the inspiration and groundwork!
+This project builds upon [ZoLArk173/nputop](https://github.com/ZoLArk173/nputop). Thanks for the inspiration and groundwork!
 
 ## License
 
 MIT License - See LICENSE file for details.
+
+---
+Just 52 lines of pure Python. No dependencies. No complications. It just works.
