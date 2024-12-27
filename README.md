@@ -1,6 +1,6 @@
 # intel-npu-top
 
-A minimalist, zero-dependency monitoring tool for Intel Meteor Lake NPU usage in real-time via sysfs on Linux. Features clean ASCII-based visualization in just 52 lines of Python.
+A minimalist, zero-dependency monitoring tool for Intel Meteor Lake NPU usage in real-time via sysfs on Linux. Features clean ASCII-based visualization in just 200 lines of Python.
 
 ![NPU Usage Monitor Screenshot](assets/screenshot.png)
 
@@ -59,4 +59,4 @@ This project builds upon [ZoLArk173/nputop](https://github.com/ZoLArk173/nputop)
 MIT License - See LICENSE file for details.
 
 ---
-Just 52 lines of pure Python. No dependencies. No complications. It just works.
+Just 200 lines of pure Python. No dependencies. No complications. It just works.
